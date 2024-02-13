@@ -6,7 +6,7 @@ import iphone from "../assets/images/iphone.svg"
 import friends from "../assets/images/friends.svg"
 const Refer = () => {
   return (
-<Flex w={'100%'}  pl={'80px'} justifyContent={'space-between'}>
+<Flex w={'100%'} display={{base:'block',md:'flex'}} mt={'30px'}  pl={{base:'10px',md:'80px'}} justifyContent={'space-between'}>
     <Flex flexDir={'column'} justifyContent={'center'} mt={'50px'} height={'fit-content'}>
     <Text fontSize={'44px'} mb={'30px'} fontWeight={'600'} lineHeight={'60px'}>Refer & Earn Now</Text>
     <Text fontSize={'22px'} fontWeight={'400'} lineHeight={'24px'}>Get a ₹500 Big Basket gift card</Text>
@@ -14,7 +14,7 @@ const Refer = () => {
     <Text fontSize={'16px'} mt={'20px'} fontWeight={'400'} lineHeight={'20px'} textDecoration={'underline'}>Terms and Conditions apply</Text>
     </Flex>
 
-    <Box pos={'relative'}>
+    <Box pos={'relative'} display={{base:'none',md:'block'}}>
         <Image src={Ellipse6}  />
         <Image src={Ellipse1} pos={'absolute'} top={0} left={200}/>
         <Image src={iphone} pos={'absolute'} top={30} left={320} />

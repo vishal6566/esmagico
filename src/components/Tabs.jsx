@@ -8,7 +8,7 @@ import star1 from "../assets/images/star1.svg"
 import loan from "../assets/images/loan.svg"
 const TabsDisplay = () => {
   return (
-    <Box  pl={'80px'}>
+    <Box  pl={'80px'} mt={'30px'} display={{base:'none',lg:'block'}}>
           <Tabs variant='enclosed'>
     <TabList bgColor={'none'}>
       <Tab >

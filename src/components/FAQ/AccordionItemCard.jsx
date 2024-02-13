@@ -4,12 +4,12 @@ import { AccordionButton, AccordionItem, AccordionPanel, Box, Image } from "@cha
 
 export const AccordionItemCard = ({ faq }) => {
   return (
-    <AccordionItem borderTop={"none"} borderBottom={"1px"}>
+    <AccordionItem borderTop={"none"} >
       {({ isExpanded }) => {
         return (
           <>
             <h2>
-              <AccordionButton px={0} bgColor={'white'} border={'none'} pl={'40px'} my={'25px'}>
+              <AccordionButton px={0} bgColor={'white'}  border={'none'} pl={'40px'} my={'25px'}>
                 <Box as="span" flex="1" textAlign="left" fontWeight={'600'} fontSize={'18px'} lineHeight={'21px'}>
                   {faq.quest}
                 </Box>
@@ -20,7 +20,7 @@ export const AccordionItemCard = ({ faq }) => {
                 )}
               </AccordionButton>
             </h2>
-            <AccordionPanel textStyle={"accordionAns"} pb={4} pl={'40px'} >
+            <AccordionPanel  pb={4} pl={'40px'} >
               {faq.ans}
             </AccordionPanel>
           </>

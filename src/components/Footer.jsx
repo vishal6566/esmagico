@@ -4,12 +4,12 @@ import TataNeuIcon from "../assets/images/Logo.svg"
 import social from "../assets/images/social.svg"
 const Footer = () => {
   return (
-    <Flex w={'100%'} mt={'30px'} bg={'black'} color={'white'} pl={'80px'} py={'30px'} justifyContent={'space-between'}>
-<Flex flexDir={'column'} gap={40}>
+    <Flex w={'100%'} display={{base:"block",md:"flex"}}  mt={'30px'} bg={'black'} color={'white'} pl={'80px'} py={'30px'} justifyContent={'space-between'}>
+<Flex flexDir={'column'} gap={10}>
    <Box> <Image src={TataNeuIcon} /></Box>
   <Box> <Image src={social} /></Box>
 </Flex>
-<Flex  mr={'30px'} gap={'40'}>
+<Flex  mr={'30px'} gap={10} mt={{base:"30px",md:'0px'}}>
     <Box>
         <Text mb={'15px'} fontSize={'18px'} fontWeight={'600'} lineHeight={'21px'}>Help & Support</Text>
         <Text mb={'12px'}  fontSize={'14px'} fontWeight={'400'} lineHeight={'17px'}>Terms & Service</Text>

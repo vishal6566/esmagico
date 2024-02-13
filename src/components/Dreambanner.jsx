@@ -10,9 +10,9 @@ import Ellipse1 from "../assets/images/Ellipse1.svg"
 import father from "../assets/images/father-pointing-finger.svg"
 const Dreambanner = () => {
   return (
-   <Flex w={'100%'} gap={'20px'}   pl={'80px'}>
-    <Box w={'50%'} mt={'80px'}  >
-        <Text color={'#2A2A2A'} fontSize={'60px'} fontWeight={'700'} lineHeight={'96px'}>Turn Dreams into Reality with <span style={{color:'#FF0096'}}>Personal Loans</span> </Text>
+   <Flex w={'100%'} display={{base:'block',md:'flex'}} gap={'20px'}   pl={'80px'}>
+    <Box w={{base:'100%',md:'50%'}} mt={'80px'}  >
+        <Text color={'#2A2A2A'} fontSize={{base:'30px',md:'60px'}} fontWeight={'700'} lineHeight={{base:'40px',md:'96px'}}>Turn Dreams into Reality with <span style={{color:'#FF0096'}}>Personal Loans</span> </Text>
    <Flex gap={'100px'} mt={'30px'}>
     <Flex alignItems={'center'} gap={'17px'}>
         <Image w={'60px'} h={'60px'} src={avail} alt='avail icon' />
@@ -49,7 +49,7 @@ const Dreambanner = () => {
     </Box>
 
 
-    <Box w={'45%'} mt={'40px'}   pos={'relative'}>
+    <Box w={'45%'} mt={'40px'} display={{base:'none',md:'block'}}  pos={'relative'}>
         <Image src={Ellipse3}    />
         <Image src={Ellipse2}  pos={'absolute'} top={'70'} left={'70'}  />
         <Image src={Ellipse1}  pos={'absolute'} top={'120'} left={'120'}  />

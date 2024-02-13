@@ -13,6 +13,9 @@ import Refer from './components/Refer'
 
 import TabsDisplay from './components/Tabs'
 import CustomerSay from './components/CustomerSay'
+import Emi from './components/Emi'
+
+import SmallScreenNavbar from './components/SmallScreenNavbar'
 
 function App() {
  
@@ -20,12 +23,15 @@ function App() {
   return (
     <>
    <Navbar />
+ 
+ <SmallScreenNavbar />
    <Dreambanner />
    <LoanHighlights />
    <Partners />
    <FastProcess/>
    <CustomerSay />
    <TabsDisplay />
+   <Emi/>
    <Refer />
    <FAQ />
    <Footer />

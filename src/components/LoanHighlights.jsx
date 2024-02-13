@@ -5,7 +5,7 @@ import man from "../assets/images/man.svg"
 import star1 from "../assets/images/star1.svg"
 const LoanHighlights = () => {
   return (
-    <Box pl={'80px'}  width={'100%'}>
+    <Box pl={{base:"0px",md:'80px'}} mt={'30px'} width={'100%'}>
 
     <Flex gap={'11px'} >
 <Image src={Star} alt='star' />
@@ -13,11 +13,11 @@ const LoanHighlights = () => {
     </Flex>
     
     <Flex mt={'30px'} gap={'20px'}>
-<Box w={'36%'}>
+<Box w={'36%'} display={{base:'none',md:"block"}}>
     <Image src={man} alt='man' />
 </Box>
-<Flex   w={'55%'} justifyContent={'center'} height={'fit-content'} borderRadius={'5px'} bgColor={'#fcf8ff'} py={'40px'}  >
-<Card w={'86%'} height={'fit-content'} >
+<Flex   w={{base:"100%",md:"'55%'"}} justifyContent={'center'} height={'fit-content'} borderRadius={'5px'} bgColor={'#fcf8ff'} py={'40px'}  >
+<Card w={{base:"100%",md:'86%'}} height={'fit-content'} bgColor={'#fcf8ff'} >
  
 
   <CardBody>

@@ -8,7 +8,7 @@ import bell from "../assets/images/bell.svg"
 import profile from "../assets/images/profile.svg"
 const Navbar = () => {
   return (
-   <Box w={'100%'} p={'24px 32px'} bgColor={'#fdfdfd'} boxShadow={'box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;'}>
+   <Box w={'100%'}   display={{ base: "none", md: "block" }} p={'24px 32px'} bgColor={'#fdfdfd'} boxShadow={'box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;'}>
     <Flex w={'98%'} height={'40px'}  justifyContent={'space-between'}  fontWeight={'600'} lineHeight={'20px'} fontSize={'14px'}>
      <Flex gap={'16px'} >
         <Image src={TataNeuIcon} alt='Tata Neu Icon' />
