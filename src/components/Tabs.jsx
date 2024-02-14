@@ -8,7 +8,7 @@ import star1 from "../assets/images/star1.svg"
 import loan from "../assets/images/loan.svg"
 const TabsDisplay = () => {
   return (
-    <Box  pl={'80px'} mt={'30px'} display={{base:'none',lg:'block'}}>
+    <Box  pl={{base:'10px',lg:'80px'}} mt={'30px'}  pr={{base:'10px',lg:'0px'}}  >
           <Tabs variant='enclosed'>
     <TabList bgColor={'none'}>
       <Tab >
@@ -19,18 +19,18 @@ const TabsDisplay = () => {
         <Image src={point} />
         <Text fontWeight={'600'} ml={'5px'} fontSize={'26px'} lineHeight={'35px'}>How To Apply</Text>
       </Tab>
-      <Tab >
+      <Tab display={{base:'none',lg:'flex'}} >
         <Image src={document} />
         <Text fontWeight={'600'} ml={'5px'} fontSize={'26px'} lineHeight={'35px'}>Documentation</Text>
       </Tab>
-      <Tab >
+      <Tab display={{base:'none',lg:'flex'}}>
         <Image src={fee} />
         <Text fontWeight={'600'} ml={'5px'} fontSize={'26px'} lineHeight={'35px'}>Fees & Charges</Text>
       </Tab>
      
     </TabList>
     <TabPanels>
-      <TabPanel  border={'1px solid gray'}w={'80%'}>
+      <TabPanel  border={'1px solid #E6EBF2'}w={{base:'100%',lg:'80%'}}>
         <Flex justifyContent={'space-around'}  pt={'30px'}>
 
       <Flex flexDir={'column'} gap={8} pb={'30px'}>
@@ -69,7 +69,7 @@ const TabsDisplay = () => {
             </Box>     
         </Flex>
       </TabPanel>
-      <TabPanel  border={'1px solid gray'}w={'80%'}>
+      <TabPanel  border={'1px solid #E6EBF2'}w={{base:'100%',lg:'80%'}}>
         <Flex justifyContent={'space-around'}  pt={'30px'}>
 
       <Flex flexDir={'column'} gap={8} pb={'30px'}>
@@ -108,7 +108,7 @@ const TabsDisplay = () => {
             </Box>     
         </Flex>
       </TabPanel>
-      <TabPanel border={'1px solid gray'}w={'80%'} >
+      <TabPanel display={{base:'none',lg:'block'}} border={'1px solid #E6EBF2'}w={{base:'100%',lg:'80%'}} >
         <Flex justifyContent={'space-around'}  pt={'30px'}>
 
       <Flex flexDir={'column'} gap={8} pb={'30px'}>
@@ -147,7 +147,7 @@ const TabsDisplay = () => {
             </Box>     
         </Flex>
       </TabPanel>
-      <TabPanel  border={'1px solid gray'}w={'80%'}>
+      <TabPanel display={{base:'none',lg:'block'}} border={'1px solid #E6EBF2'}w={{base:'100%',lg:'80%'}}>
         <Flex justifyContent={'space-around'}  pt={'30px'}>
 
       <Flex flexDir={'column'} gap={8} pb={'30px'}>

@@ -10,7 +10,7 @@ const FAQ = () => {
   return (
     
       
-        <Flex direction="column" w={'100%'} mt={'30px'}>
+        <Flex direction="column" w={'100%'} mt={'40px'} >
           <Flex gap={'10'} pl={'80px'} mb={'20px'} >
             <Image src={Qcircle} />
           <Heading  fontSize={'44px'} fontWeight={'600'} lineHeight={'60px'} >
@@ -22,7 +22,7 @@ const FAQ = () => {
               return <AccordionItemCard faq={faq}  />;
             })}
           </Accordion>
-          <Flex w={'90%'} display={{base:'block',lg:'flex'}} bgColor={'#f9f2fe'} borderRadius={'5px'} margin={'auto'} py={'15px'} pl={'15px'} alignItems={'center'} gap={'40'}>
+          <Flex w={'90%'} pr={{base:'0px',lg:'20px'}} display={{base:'block',lg:'flex'}} bgColor={'#f9f2fe'} borderRadius={'5px'} margin={'auto'} py={'15px'} pl={'15px'} alignItems={'center'} gap={'40'}>
             <Box>
               <Text fontWeight={'700'} fontSize={'24px'} lineHeight={'29px'}>Anything not clear?</Text>
               <Text fontWeight={'400'} fontSize={'18px'} lineHeight={'28px'}>You can see our detailed F&Q sessions if you have more quiries. Also we are always a single call away for all your special asks...</Text>

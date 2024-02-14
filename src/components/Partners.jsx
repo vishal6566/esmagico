@@ -5,9 +5,9 @@ import icici from "../assets/images/icici.svg"
 import bob from "../assets/images/bob.svg"
 const Partners = () => {
   return (
-    <Flex w={'100%'} pl={{base:'10px',lg:'80px'}} bgColor={'#f8f9fa'} gap={{base:4,md:20}}>
-<Text fontSize={{base:'20px',md:'38px'}} fontWeight={'600'} lineHeight={'52px'} my={'96px'}>Our Partners</Text>
-    <Flex mt={'72px'} w={'70%'} justifyContent={'space-between'}  >
+    <Flex mt={{base:"30px",xl:"0px"}} flexDir={{base:"column",lg:'row'}} w={'100%'} py={{base:"35px",md:'70px'}} pl={{base:'10px',lg:'80px'}} bgColor={'#f8f9fa'} gap={{base:10,lg:20}}>
+<Text fontSize={{base:'30px',md:'38px'}} fontWeight={'600'} lineHeight={'52px'} >Our Partners</Text>
+    <Flex  w={{base:"100%",xl:"70%"}} justifyContent={'space-between'}   >
     <Box>
         <Image src={hdfc} alt='hdfc' />
         <Text textAlign={'center'}  fontSize={{base:'14px',md:'24px'}}  fontWeight={'600'} lineHeight={'33px'}>HDFC Bank</Text>
@@ -16,7 +16,7 @@ const Partners = () => {
         <Image src={icici} alt='hdfc' />
         <Text textAlign={'center'}  fontSize={{base:'14px',md:'24px'}} fontWeight={'600'} lineHeight={'33px'}>ICICI Bank</Text>
     </Box>
-    <Box>
+    <Box display={{base:"none",sm:"block"}}>
         <Image src={icici} alt='hdfc' />
         <Text textAlign={'center'}  fontSize={{base:'14px',md:'24px'}} fontWeight={'600'} lineHeight={'33px'}>ICICI Bank</Text>
     </Box>

@@ -8,7 +8,7 @@ import emic from "../assets/images/emic.svg"
 import frame from "../assets/images/Frame.svg"
 const Emi = () => {
   return (
-   <Box pl={'80px'}>
+   <Box pl={{base:'10px',md:'80px'}}>
 <Flex  mt={'30px'} gap={6}  >
    
   

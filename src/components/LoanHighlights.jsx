@@ -5,18 +5,18 @@ import man from "../assets/images/man.svg"
 import star1 from "../assets/images/star1.svg"
 const LoanHighlights = () => {
   return (
-    <Box pl={{base:"0px",md:'80px'}} mt={'30px'} width={'100%'}>
+    <Box pl={{base:"10px",xl:'80px'}} pr={{base:'10px',xl:'0px'}} mt={'30px'} width={'100%'}>
 
     <Flex gap={'11px'} >
 <Image src={Star} alt='star' />
-<Text fontSize={'44px'} fontWeight={'600'} lineHeight={'60px'}>Personal Loan Highlights</Text>
+<Text fontSize={{base:'30px',md:'44px'}} fontWeight={'600'} lineHeight={{base:'40px',md:'60px'}}>Personal Loan Highlights</Text>
     </Flex>
     
-    <Flex mt={'30px'} gap={'20px'}>
-<Box w={'36%'} display={{base:'none',md:"block"}}>
-    <Image src={man} alt='man' />
+    <Flex mt={'30px'} gap={'20px'} >
+<Box w={'45%'} display={{base:'none',xl:"block"}} backgroundImage={man} backgroundSize={'cover'} backgroundPosition={'center'}>
+  
 </Box>
-<Flex   w={{base:"100%",md:"'55%'"}} justifyContent={'center'} height={'fit-content'} borderRadius={'5px'} bgColor={'#fcf8ff'} py={'40px'}  >
+<Flex  w={{base:"100%",md:"'50%'"}} justifyContent={'center'} height={'fit-content'} borderRadius={'5px'} bgColor={'#fcf8ff'} py={'40px'}  >
 <Card w={{base:"100%",md:'86%'}} height={'fit-content'} bgColor={'#fcf8ff'} >
  
 

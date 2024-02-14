@@ -22,7 +22,7 @@ const Navbar = () => {
      <Flex gap={'24px'} alignItems={'center'}>
 <Flex alignItems={'center'}  h={'40px'} gap={'8px'} p={'8px 12px'} bgColor={'#e3e3e3'} borderRadius={'5px'}>
     <Image src={Search} w={'16px'} h={'16px'} alt='search icon' />
-    <Input placeholder='Search Tata Neu' h={'40px'} border={'none'} outline={'none'} bgColor={'#e3e3e3'} />
+    <Input display={{base:'none',lg:'block'}} placeholder='Search Tata Neu' h={'40px'} border={'none'} outline={'none'} bgColor={'#e3e3e3'} />
 </Flex>
 <Flex gap={'2px'}>
     <Text>122018</Text>
